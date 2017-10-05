@@ -4,14 +4,16 @@ const fs = require('fs');
 const readlines = require('n-readlines');
 const axios = require('axios');
 
-const api = new MiaApiClient('10.21.64.172', 9090);
+hostname = '10.21.64.172';
+hostname = "localhost";
+const api = new MiaApiClient(hostname, 9090);
 
 const callMiaApi = (api) => {
   const PARAM_NAME = 'hello';
   const PARAM_VALUE = 'world';
   
   // test mia api
-  api.MILogMsg('Test started...');
+  api.MILogMsg('MIxxx test started...');
 
   api.MISetTaskParam(PARAM_NAME, PARAM_VALUE);
 
@@ -19,6 +21,8 @@ const callMiaApi = (api) => {
   console.log(`${PARAM_NAME}=${value}`);
 
   api.MILogMsg(`${PARAM_NAME}=${value}`);
+  api.MILogMsg('MIxxx test complete.');
+  console.log("MIxxx test complete.  See server console for MILogMsg output.");
 };
 
 const readLinesFromFile = () => {
