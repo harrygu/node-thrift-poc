@@ -1,0 +1,20 @@
+{
+  "name": "node-thrift-poc",
+  "description": "A proof of concept for calling remote APIs using Apache Thrift",
+  "private": true,
+  "scripts": {
+    "gen-node": "thrift --gen js:node mia.thrift",
+    "callback": "node test-callback",
+    "sync": "node test-sync",
+    "promise": "node test-promise",
+    "await": "node test-async-await",
+    "clean": "rm -rf gen-nodejs node_modules"
+  },
+  "dependencies": {
+    "axios": "^0.16.2",
+    "n-readlines": "^0.2.8",
+    "node-int64": "*",
+    "synchronize": "^2.0.0",
+    "thrift": "*"
+  }
+}
