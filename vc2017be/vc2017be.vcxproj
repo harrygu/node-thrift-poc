@@ -159,8 +159,12 @@
   <ItemGroup>
     <ClCompile Include="..\be.cc" />
     <ClCompile Include="..\gen-cpp\MIAScriptAPI.cpp" />
-    <ClCompile Include="..\gen-cpp\mia_constants.cpp" />
-    <ClCompile Include="..\gen-cpp\mia_types.cpp" />
+    <ClCompile Include="..\gen-cpp\mia_constants.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\gen-cpp\mia_types.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

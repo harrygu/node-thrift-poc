@@ -37,6 +37,8 @@ private:
    TypParamMap m_mapParams;
  public:
   Service() : start_time_ms_(js_date_now()) {
+     // Pretend that the user has configured this task parameter.
+     MISetTaskParam("shortUrl", "http://goo.gl/P79A");
   }
 
   virtual void MIGetTaskParam(std::string& _return, const std::string& ParamName) {
@@ -45,8 +47,10 @@ private:
      if(m_mapParams.end() != iter) {
         _return = iter->second;
      }
+     std::cout << "MIGetTaskParam called with " << ParamName << " is returning " << _return << std::endl;
   }
   virtual void MISetTaskParam(const std::string& ParamName, const std::string& ParamValue) {
+     std::cout << "MISetTaskParam called with " << ParamName << "=" << ParamValue << std::endl;
      m_mapParams[ParamName] = ParamValue;
   }
   virtual void MILogMsg(const std::string& Message) {
@@ -110,5 +114,6 @@ int main(int argc, char** argv) {
   boost::shared_ptr<TServerTransport> serverTransport(new TServerSocket(FLAGS_port));
   boost::shared_ptr<TTransportFactory> transportFactory(new TBufferedTransportFactory());
   boost::shared_ptr<TProtocolFactory> protocolFactory(new TBinaryProtocolFactory());
+  std::cout << "About to start server on port " <<  FLAGS_port << std::endl;
   TSimpleServer(processor, serverTransport, transportFactory, protocolFactory).serve();
 }

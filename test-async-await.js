@@ -3,7 +3,9 @@ const readlines = require('n-readlines');
 const axios = require('axios');
 const MiaApiClient = require('./MiaApiClient')
 
-const api = new MiaApiClient('10.21.64.172', 9090);
+var backendHost = '10.21.64.172';
+backendHost = 'localhost';
+const api = new MiaApiClient(backendHost, 9090);
 
 ////// Call MIA API asynchronously
 const callMiaApiPromise = async function(api) {
