@@ -232,7 +232,8 @@ public partial class MIAScriptAPI {
 
     public void MILogMsg(string Message)
     {
-      #if !SILVERLIGHT
+#if !SILVERLIGHT
+      // Console.WriteLine("MIAScriptAPI.MILogMsg here with " + Message);
       send_MILogMsg(Message);
       recv_MILogMsg();
 

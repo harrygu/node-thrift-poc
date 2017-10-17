@@ -1,1 +1,1 @@
-vc2017be\CallerAppCS\bin\Debug\CallerAppCS.exe
+CallerAppCS\bin\Debug\CallerAppCS.exe c:\tmp\moveit\node-thrift-poc\callerappvb\class1.vb

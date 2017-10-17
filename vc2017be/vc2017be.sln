@@ -11,6 +11,8 @@ Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CallerAppVB", "..\CallerApp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MIANETClient", "..\MIANETClient\MIANETClient.csproj", "{F1746ECF-E6A9-45B9-B0D5-B9A7844C3C25}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PSHostApp", "..\PSHostApp\PSHostApp.csproj", "{0AA6D46C-3748-4ABD-B875-53BF016011EB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,6 +69,18 @@ Global
 		{F1746ECF-E6A9-45B9-B0D5-B9A7844C3C25}.Release|x64.Build.0 = Release|Any CPU
 		{F1746ECF-E6A9-45B9-B0D5-B9A7844C3C25}.Release|x86.ActiveCfg = Release|Any CPU
 		{F1746ECF-E6A9-45B9-B0D5-B9A7844C3C25}.Release|x86.Build.0 = Release|Any CPU
+		{0AA6D46C-3748-4ABD-B875-53BF016011EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AA6D46C-3748-4ABD-B875-53BF016011EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AA6D46C-3748-4ABD-B875-53BF016011EB}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{0AA6D46C-3748-4ABD-B875-53BF016011EB}.Debug|x64.Build.0 = Debug|Any CPU
+		{0AA6D46C-3748-4ABD-B875-53BF016011EB}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{0AA6D46C-3748-4ABD-B875-53BF016011EB}.Debug|x86.Build.0 = Debug|Any CPU
+		{0AA6D46C-3748-4ABD-B875-53BF016011EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AA6D46C-3748-4ABD-B875-53BF016011EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AA6D46C-3748-4ABD-B875-53BF016011EB}.Release|x64.ActiveCfg = Release|Any CPU
+		{0AA6D46C-3748-4ABD-B875-53BF016011EB}.Release|x64.Build.0 = Release|Any CPU
+		{0AA6D46C-3748-4ABD-B875-53BF016011EB}.Release|x86.ActiveCfg = Release|Any CPU
+		{0AA6D46C-3748-4ABD-B875-53BF016011EB}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
