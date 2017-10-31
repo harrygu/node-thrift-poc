@@ -89,13 +89,13 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>C:\boost\boost_1_64_0;C:\dist\thrift-0.10.0\lib\cpp\src</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\packages\thrift-vc141-ips\installed\x64-windows-static\include</AdditionalIncludeDirectories>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>C:\dist\thrift-0.10.0\lib\cpp\Debug\libthrift.lib;C:\OpenSSL-Win32\lib\VC\libeay32MD.lib;C:\OpenSSL-Win32\lib\VC\ssleay32MD.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>..\packages\thrift-vc141-ips\installed\x86-windows-static\debug\lib\thriftmdd.lib;..\packages\thrift-vc141-ips\installed\x86-windows-static\debug\lib\libeay32.lib;..\packages\thrift-vc141-ips\installed\x86-windows-static\debug\lib\ssleay32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <AdditionalLibraryDirectories>C:\boost\boost_1_64_0\lib32-msvc-14.1\</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
